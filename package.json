@@ -1,0 +1,34 @@
+{
+    "name": "GridTooltips",
+    "type": "code",
+    "creator": "Mike Hill (mike12489@gmail.com)",
+    "summary": "Grid Tooltips plugin",
+    "detailedDescription": "Package to add the Tooltips plugin for grids.",
+    "version": "1.0.0",
+    "compatVersion": "1.0.0",
+    "format": "1",
+    "slicer": {
+        "js": [
+            {
+                "path": "${package.dir}/sass/example/custom.js",
+                "isWidgetManifest": true
+            }
+        ]
+    },
+    "architect": {
+        "defsonly": true,
+        "compatFrameworks": [
+            "ext50"
+        ],
+        "requires": ["../architect-lib/package-all.js"],
+        "classes": [{
+            "definition": "Ext/ux/GridTooltips/grid/plugin/GridTooltips.Definition.js",
+            "className": "Ext.ux.GridTooltips.grid.plugin.GridTooltips",
+            "js": [],
+            "css": []
+        }]
+    },
+    "output": "${package.dir}/build",
+    "local": true,
+    "requires": []
+}
